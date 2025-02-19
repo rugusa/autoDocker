@@ -1,13 +1,13 @@
 services:
   db:
-    image: rugusa/mi_cine:v1
-    container_name: contenedorMiCine
+    image: rugusa/mi_cine_prueba:v1
+    container_name: contenedorMiCinePrueba
     ports:
       - "3306:3306"
 
   php:
-    image: rugusa/mi_app_cine:v1
-    container_name: contenedorMiApp
+    image: rugusa/mi_app_cine_prueba:v1
+    container_name: contenedorMiAppPrueba
     ports:
       - "8080:80"
     depends_on:
